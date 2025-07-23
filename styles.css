@@ -310,26 +310,6 @@ body {
     color: var(--primary-color);
 }
 
-/* 広告スペース */
-.ad-container {
-    padding: 2rem 0;
-    background: var(--bg-light);
-}
-
-.ad-space {
-    text-align: center;
-}
-
-.ad-horizontal {
-    max-width: 728px;
-    margin: 0 auto;
-}
-
-.ad-square {
-    width: 300px;
-    margin: 0 auto;
-}
-
 /* ランキング */
 .ranking-container {
     display: grid;
