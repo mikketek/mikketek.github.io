@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ARTICLE_TITLE}} - 副業ラボ</title>
+    <meta name="description" content="{{META_DESCRIPTION}}">
+    <meta name="keywords" content="副業,{{KEYWORDS}}">
+    <link rel="stylesheet" href="../../styles.css">
+    <link rel="stylesheet" href="../../article-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Google AdSense placeholder -->
+    <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXX" crossorigin="anonymous"></script> -->
+</head>
+<body>
+    <!-- ヘッダー -->
+    <header class="header">
+        <nav class="nav">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <div class="logo">
+                        <h1><a href="../../">副業ラボ</a></h1>
+                    </div>
+                    <ul class="nav-menu">
+                        <li><a href="../../#categories">カテゴリー</a></li>
+                        <li><a href="../../#ranking">人気記事</a></li>
+                        <li><a href="../../#about">初めての方へ</a></li>
+                        <li><a href="../../#contact" class="cta-button">お問い合わせ</a></li>
+                    </ul>
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- パンくずリスト -->
+    <div class="breadcrumb">
+        <div class="container">
+            <ul>
+                <li><a href="../../index.html">ホーム</a></li>
+                <li><a href="../../categories/{{CATEGORY_URL}}.html">{{CATEGORY_NAME}}</a></li>
+                <li>{{BREADCRUMB_TITLE}}</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- メインコンテンツ -->
+    <main class="article-main">
+        <div class="container">
+            <div class="article-container">
+                <!-- 記事本文 -->
+                <article class="article-content">
+                    <header class="article-header">
+                        <div class="article-meta-top">
+                            <span class="category-tag">{{CATEGORY_NAME}}</span>
+                            <time datetime="{{PUBLISH_DATE}}">{{PUBLISH_DATE_JP}}</time>
+                            <span class="update-date">最終更新: {{UPDATE_DATE_JP}}</span>
+                        </div>
+                        <h1 class="article-title">{{ARTICLE_TITLE}}</h1>
+                        <p class="article-lead">{{ARTICLE_LEAD}}</p>
+                        <div class="article-info">
+                            <span class="author">著者: AI副業アドバイザー</span>
+                            <span class="read-time">読了時間: 約{{READ_TIME}}分</span>
+                            <span class="difficulty">難易度: {{DIFFICULTY}}</span>
+                        </div>
+                    </header>
+
+                    <!-- 目次 -->
+                    <nav class="table-of-contents">
+                        <h2>目次</h2>
+                        <ol>
+                            {{TABLE_OF_CONTENTS}}
+                        </ol>
+                    </nav>
+
+                    <!-- 記事本文 -->
+                    <div class="article-body">
+                        {{ARTICLE_SECTIONS}}
+
+                        <!-- CTA -->
+                        <div class="article-cta">
+                            <h3>{{CTA_TITLE}}</h3>
+                            <p>この記事がお役に立ちましたら、ぜひ他の副業情報もご覧ください</p>
+                            <a href="../../" class="btn btn-primary">他の副業情報を見る</a>
+                        </div>
+                    </div>
+
+                    <!-- 関連記事 -->
+                    <section class="related-articles">
+                        <h2>関連記事</h2>
+                        <div class="related-grid">
+                            {{RELATED_ARTICLES}}
+                        </div>
+                    </section>
+                </article>
+
+                <!-- サイドバー（簡略化版） -->
+                <aside class="article-sidebar">
+                    <!-- プロフィール -->
+                    <div class="sidebar-widget">
+                        <h3>この記事を書いた人</h3>
+                        <div class="author-profile">
+                            <div class="author-avatar">AI</div>
+                            <h4>AI副業アドバイザー</h4>
+                            <p>最新のAI技術で毎日更新される副業情報を分析・提供しています。</p>
+                        </div>
+                    </div>
+
+                    <!-- 人気記事（固定リスト） -->
+                    <div class="sidebar-widget">
+                        <h3>人気記事TOP5</h3>
+                        <ol class="popular-list">
+                            <li><a href="#">月10万円稼げる副業ランキング2025年版</a></li>
+                            <li><a href="#">スマホだけでできる副業15選</a></li>
+                            <li><a href="#">副業の税金対策完全ガイド</a></li>
+                            <li><a href="#">週末起業で成功する7つのステップ</a></li>
+                            <li><a href="#">在宅ワークの効率を2倍にする方法</a></li>
+                        </ol>
+                    </div>
+
+                    <!-- カテゴリー（実数反映版） -->
+                    <div class="sidebar-widget">
+                        <h3>カテゴリー</h3>
+                        <ul class="category-list">
+                            <li><a href="../../categories/online-work.html">在宅ワーク (4)</a></li>
+                            <li><a href="#">投資・資産運用 (0)</a></li>
+                            <li><a href="#">スキルシェア (0)</a></li>
+                            <li><a href="#">クリエイティブ (0)</a></li>
+                            <li><a href="#">物販・EC (0)</a></li>
+                        </ul>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <!-- フッター -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>副業ラボ</h3>
+                    <p>AIが提案する最新副業情報サイト</p>
+                </div>
+                <div class="footer-section">
+                    <h4>カテゴリー</h4>
+                    <ul>
+                        <li><a href="../../categories/online-work.html">在宅ワーク</a></li>
+                        <li><a href="#">投資・資産運用</a></li>
+                        <li><a href="#">スキルシェア</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>サイト情報</h4>
+                    <ul>
+                        <li><a href="#">利用規約</a></li>
+                        <li><a href="#">プライバシーポリシー</a></li>
+                        <li><a href="#">お問い合わせ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 副業ラボ. All rights reserved. | <a href="#">運営者情報</a></p>
+                <p style="font-size: 0.75rem; color: #999; margin-top: 0.5rem;">※ このサイトは生成AIを用いて作成しています。</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../script.js"></script>
+</body>
+</html>

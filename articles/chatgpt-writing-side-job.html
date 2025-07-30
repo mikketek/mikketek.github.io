@@ -12,37 +12,16 @@
     <!-- Google AdSense placeholder -->
     <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXX" crossorigin="anonymous"></script> -->
 </head>
-<body>
+<body data-depth="1">
     <!-- ヘッダー -->
-    <header class="header">
-        <nav class="nav">
-            <div class="container">
-                <div class="nav-wrapper">
-                    <div class="logo">
-                        <h1><a href="/fukugyo-lab/">副業ラボ</a></h1>
-                    </div>
-                    <ul class="nav-menu">
-                        <li><a href="/fukugyo-lab/#categories">カテゴリー</a></li>
-                        <li><a href="/fukugyo-lab/#ranking">人気記事</a></li>
-                        <li><a href="/fukugyo-lab/#about">初めての方へ</a></li>
-                        <li><a href="/fukugyo-lab/#contact" class="cta-button">無料相談</a></li>
-                    </ul>
-                    <div class="hamburger">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                </div>
-            </div>
-        </nav>
-    </header>
+    <div id="common-header"></div>
 
     <!-- パンくずリスト -->
     <div class="breadcrumb">
         <div class="container">
             <ul>
-                <li><a href="/fukugyo-lab/">ホーム</a></li>
-                <li><a href="/fukugyo-lab/categories/online-work.html">在宅ワーク</a></li>
+                <li><a href="../index.html">ホーム</a></li>
+                <li><a href="../categories/online-work.html">在宅ワーク</a></li>
                 <li>ChatGPTを活用したWebライティング副業で月10万円稼ぐ方法</li>
             </ul>
         </div>
@@ -218,9 +197,9 @@
 
                         <!-- CTA -->
                         <div class="article-cta">
-                            <h3>Webライティング副業を始める準備はできましたか？</h3>
-                            <p>あなたの状況に合わせた最適な副業プランをAIが無料で提案します</p>
-                            <a href="/fukugyo-lab/#contact" class="btn btn-primary">無料相談を申し込む</a>
+                            <h3>他の副業情報もチェックしてみませんか？</h3>
+                            <p>あなたに合った副業がきっと見つかります</p>
+                            <a href="../articles/index.html" class="btn btn-primary">他の副業記事を見る</a>
                         </div>
                     </div>
 
@@ -229,16 +208,16 @@
                         <h2>関連記事</h2>
                         <div class="related-grid">
                             <article class="related-card">
-                                <h3><a href="#">【2025年版】在宅ライター向けおすすめクラウドソーシングサイト10選</a></h3>
-                                <p>初心者から上級者まで、レベル別におすすめのサイトを紹介</p>
+                                <h3><a href="online-work/writing-side-job.html">Webライティング副業で月5万円稼ぐ方法｜初心者向け完全ガイド</a></h3>
+                                <p>Webライティングの基本から収入アップまでの実践的ガイド</p>
                             </article>
                             <article class="related-card">
-                                <h3><a href="#">SEOライティングの基本｜検索上位を狙える記事の書き方</a></h3>
-                                <p>ChatGPTと組み合わせて使えるSEOテクニックを解説</p>
+                                <h3><a href="online-work/data-entry-jobs.html">データ入力の副業で月5万円稼ぐ方法｜初心者向け完全ガイド</a></h3>
+                                <p>在宅でできるデータ入力副業の始め方と稼ぎ方</p>
                             </article>
                             <article class="related-card">
-                                <h3><a href="#">フリーランスライターの税金対策｜確定申告で損しない方法</a></h3>
-                                <p>副業収入が増えたら知っておきたい税金の基礎知識</p>
+                                <h3><a href="online-work/programming-for-beginners.html">プログラミング副業で月20万円稼ぐロードマップ｜未経験から始める完全ガイド</a></h3>
+                                <p>未経験から始めるプログラミング副業の完全ロードマップ</p>
                             </article>
                         </div>
                     </section>
@@ -246,76 +225,23 @@
 
                 <!-- サイドバー -->
                 <aside class="article-sidebar">
-                    <!-- プロフィール -->
-                    <div class="sidebar-widget">
-                        <h3>この記事を書いた人</h3>
-                        <div class="author-profile">
-                            <div class="author-avatar">AI</div>
-                            <h4>AI副業アドバイザー</h4>
-                            <p>最新のAI技術で毎日更新される副業情報を分析・提供しています。</p>
-                        </div>
-                    </div>
+                    <!-- 著者プロフィール（共通コンポーネント） -->
+                    <div id="author-profile"></div>
 
-                    <!-- 人気記事 -->
-                    <div class="sidebar-widget">
-                        <h3>人気記事TOP5</h3>
-                        <ol class="popular-list">
-                            <li><a href="#">【2025年版】副業で月20万円稼ぐ現実的な方法15選</a></li>
-                            <li><a href="#">スマホだけで完結！隙間時間で稼げる副業アプリ10選</a></li>
-                            <li><a href="#">AI画像生成で稼ぐ！Midjourneyを使った副業ガイド</a></li>
-                            <li><a href="#">プログラミング未経験でもOK！ノーコードツール講師で稼ぐ方法</a></li>
-                            <li><a href="#">初心者でも始められる！月1万円から始める積立投資術</a></li>
-                        </ol>
-                    </div>
+                    <!-- 人気記事（共通コンポーネント） -->
+                    <div id="popular-articles"></div>
 
-                    <!-- カテゴリー -->
-                    <div class="sidebar-widget">
-                        <h3>カテゴリー</h3>
-                        <ul class="category-list">
-                            <li><a href="#">在宅ワーク <span>(18)</span></a></li>
-                            <li><a href="#">投資・資産運用 <span>(12)</span></a></li>
-                            <li><a href="#">スキルシェア <span>(15)</span></a></li>
-                            <li><a href="#">クリエイティブ <span>(22)</span></a></li>
-                            <li><a href="#">物販・EC <span>(14)</span></a></li>
-                        </ul>
-                    </div>
+                    <!-- カテゴリー（共通コンポーネント） -->
+                    <div id="category-list"></div>
                 </aside>
             </div>
         </div>
     </main>
 
     <!-- フッター -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>副業ラボ</h3>
-                    <p>AIが提案する最新副業情報サイト</p>
-                </div>
-                <div class="footer-section">
-                    <h4>カテゴリー</h4>
-                    <ul>
-                        <li><a href="#">在宅ワーク</a></li>
-                        <li><a href="#">投資・資産運用</a></li>
-                        <li><a href="#">スキルシェア</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>サイト情報</h4>
-                    <ul>
-                        <li><a href="#">利用規約</a></li>
-                        <li><a href="#">プライバシーポリシー</a></li>
-                        <li><a href="#">お問い合わせ</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 副業ラボ. All rights reserved. | <a href="#">運営者情報</a></p>
-                <p style="font-size: 0.75rem; color: #999; margin-top: 0.5rem;">※ このサイトは生成AIを用いて作成しています。</p>
-            </div>
-        </div>
-    </footer>
+    <div id="common-footer"></div>
 
+    <script src="../components/common-components.js"></script>
     <script src="../script.js"></script>
 </body>
 </html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ARTICLE_TITLE}} - 副業ラボ</title>
+    <meta name="description" content="{{META_DESCRIPTION}}">
+    <meta name="keywords" content="副業,{{KEYWORDS}}">
+    <link rel="stylesheet" href="../../styles.css">
+    <link rel="stylesheet" href="../../article-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Google AdSense placeholder -->
+    <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXX" crossorigin="anonymous"></script> -->
+</head>
+<body>
+    <!-- ヘッダー（動的読み込み） -->
+    <div id="common-header"></div>
+
+    <!-- パンくずリスト -->
+    <div class="breadcrumb">
+        <div class="container">
+            <ul>
+                <li><a href="../../index.html">ホーム</a></li>
+                <li><a href="../../categories/{{CATEGORY_URL}}.html">{{CATEGORY_NAME}}</a></li>
+                <li>{{BREADCRUMB_TITLE}}</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- メインコンテンツ -->
+    <main class="article-main">
+        <div class="container">
+            <div class="article-container">
+                <!-- 記事本文 -->
+                <article class="article-content">
+                    <header class="article-header">
+                        <div class="article-meta-top">
+                            <span class="category-tag">{{CATEGORY_NAME}}</span>
+                            <time datetime="{{PUBLISH_DATE}}">{{PUBLISH_DATE_JP}}</time>
+                            <span class="update-date">最終更新: {{UPDATE_DATE_JP}}</span>
+                        </div>
+                        <h1 class="article-title">{{ARTICLE_TITLE}}</h1>
+                        <p class="article-lead">{{ARTICLE_LEAD}}</p>
+                        <div class="article-info">
+                            <span class="author">著者: AI副業アドバイザー</span>
+                            <span class="read-time">読了時間: 約{{READ_TIME}}分</span>
+                            <span class="difficulty">難易度: {{DIFFICULTY}}</span>
+                        </div>
+                    </header>
+
+                    <!-- 目次 -->
+                    <nav class="table-of-contents">
+                        <h2>目次</h2>
+                        <ol>
+                            {{TABLE_OF_CONTENTS}}
+                        </ol>
+                    </nav>
+
+                    <!-- 記事本文 -->
+                    <div class="article-body">
+                        {{ARTICLE_SECTIONS}}
+
+                        <!-- CTA -->
+                        <div class="article-cta">
+                            <h3>{{CTA_TITLE}}</h3>
+                            <p>この記事がお役に立ちましたら、ぜひ他の副業情報もご覧ください</p>
+                            <a href="../../" class="btn btn-primary">他の副業情報を見る</a>
+                        </div>
+                    </div>
+
+                    <!-- 関連記事 -->
+                    <section class="related-articles">
+                        <h2>関連記事</h2>
+                        <div class="related-grid">
+                            {{RELATED_ARTICLES}}
+                        </div>
+                    </section>
+                </article>
+
+                <!-- サイドバー -->
+                <aside class="article-sidebar">
+                    <!-- 著者プロフィール（動的読み込み） -->
+                    <div id="author-profile"></div>
+
+                    <!-- 人気記事TOP5（動的読み込み） -->
+                    <div id="popular-articles"></div>
+
+                    <!-- カテゴリー（動的読み込み） -->
+                    <div id="category-list"></div>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <!-- フッター（動的読み込み） -->
+    <div id="common-footer"></div>
+
+    <!-- 共通コンポーネント読み込み -->
+    <script src="../../components/common-components.js"></script>
+    <script src="../../script.js"></script>
+</body>
+</html>

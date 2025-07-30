@@ -9,43 +9,22 @@
     <link rel="stylesheet" href="../styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<body>
-    <!-- ヘッダー -->
-    <header class="header">
-        <nav class="nav">
-            <div class="container">
-                <div class="nav-wrapper">
-                    <div class="logo">
-                        <h1><a href="/fukugyo-lab/">副業ラボ</a></h1>
-                    </div>
-                    <ul class="nav-menu">
-                        <li><a href="/fukugyo-lab/#categories">カテゴリー</a></li>
-                        <li><a href="/fukugyo-lab/#ranking">人気記事</a></li>
-                        <li><a href="/fukugyo-lab/#about">初めての方へ</a></li>
-                        <li><a href="/fukugyo-lab/#contact" class="cta-button">無料相談</a></li>
-                    </ul>
-                    <div class="hamburger">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                </div>
-            </div>
-        </nav>
-    </header>
+<body data-depth="1">
+    <!-- ヘッダー（共通コンポーネント） -->
+    <div id="common-header"></div>
 
     <!-- パンくずリスト -->
     <div class="breadcrumb">
         <div class="container">
             <ul>
-                <li><a href="/fukugyo-lab/">ホーム</a></li>
+                <li><a href="../index.html">ホーム</a></li>
                 <li>記事一覧</li>
             </ul>
         </div>
     </div>
 
     <!-- ページヘッダー -->
-    <section class="hero-section">
+    <section class="hero-section" style="padding: 120px 0 60px 0;">
         <div class="container">
             <h1 class="hero-title">記事一覧</h1>
             <p class="hero-subtitle">副業に関する最新情報を毎日更新中</p>
@@ -68,139 +47,486 @@
     </section>
 
     <!-- 記事一覧 -->
-    <section class="article-list">
+    <section class="article-list" style="padding-bottom: 80px;">
         <div class="container">
             <div class="articles-grid">
-                <article class="article-card" data-category="online-work">
-                    <div class="article-meta">
-                        <span class="category-tag">在宅ワーク</span>
-                        <time datetime="2025-07-20">2025年7月20日</time>
-                    </div>
-                    <h3><a href="/fukugyo-lab/articles/chatgpt-writing-side-job.html">ChatGPTを活用したWebライティング副業で月10万円稼ぐ方法</a></h3>
-                    <p>AI技術ChatGPTを使ってWebライティングの執筆速度を3倍に向上。初心者でも月10万円を目指せる具体的な方法と実践的なノウハウを詳しく解説します。</p>
-                    <div class="article-footer">
-                        <span class="difficulty">難易度: ★★☆☆☆</span>
-                        <span class="reading-time">読了時間: 8分</span>
-                    </div>
-                </article>
+                <!-- 1ページ目: 記事1-8 -->
+                <div class="page-articles" data-page="1">
+                    <a href="chatgpt-writing-side-job.html" class="article-card" data-category="online-work" style="text-decoration: none; color: inherit; display: block; cursor: pointer;">
+                        <div class="article-meta" style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px;">
+                            <div style="display: flex; align-items: center; gap: 12px;">
+                                <span class="category-tag">在宅ワーク</span>
+                                <time datetime="2025-07-29">2025年7月29日</time>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 16px; font-size: 0.85rem;">
+                                <span class="reading-time" style="color: #666;">8分で読める</span>
+                                <span class="difficulty" style="color: #3f3277; font-weight: 600;">難易度: ★★☆☆☆</span>
+                            </div>
+                        </div>
+                        <h3>ChatGPTを活用したWebライティング副業で月10万円稼ぐ方法</h3>
+                        <p>AI技術ChatGPTを使ってWebライティングの執筆速度を3倍に向上。初心者でも月10万円を目指せる具体的な方法と実践的なノウハウを詳しく解説します。</p>
+                    </a>
 
-                <article class="article-card" data-category="investment">
-                    <div class="article-meta">
-                        <span class="category-tag">投資・資産運用</span>
-                        <time datetime="2025-07-19">2025年7月19日</time>
-                    </div>
-                    <h3><a href="#">新NISAを活用した配当金生活への道のり</a></h3>
-                    <p>2024年から始まった新NISA制度を最大限活用して、将来の配当金生活を実現する方法を解説します。</p>
-                    <div class="article-footer">
-                        <span class="difficulty">難易度: ★★★☆☆</span>
-                        <span class="reading-time">読了時間: 10分</span>
-                    </div>
-                </article>
+                    <a href="online-work/virtual-assistant.html" class="article-card" data-category="online-work" style="text-decoration: none; color: inherit; display: block; cursor: pointer;">
+                        <div class="article-meta" style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px;">
+                            <div style="display: flex; align-items: center; gap: 12px;">
+                                <span class="category-tag">在宅ワーク</span>
+                                <time datetime="2025-07-28">2025年7月28日</time>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 16px; font-size: 0.85rem;">
+                                <span class="reading-time" style="color: #666;">9分で読める</span>
+                                <span class="difficulty" style="color: #3f3277; font-weight: 600;">難易度: ★★☆☆☆</span>
+                            </div>
+                        </div>
+                        <h3>オンライン秘書の副業ガイド｜事務経験を活かして月8万円稼ぐ方法</h3>
+                        <p>事務経験やビジネススキルを活かせるオンライン秘書の副業。必要なスキル、案件の探し方、月8万円稼ぐための具体的な方法を解説します。</p>
+                    </a>
 
-                <article class="article-card" data-category="skill-share">
-                    <div class="article-meta">
-                        <span class="category-tag">スキルシェア</span>
-                        <time datetime="2025-07-18">2025年7月18日</time>
-                    </div>
-                    <h3><a href="#">ココナラでイラスト販売！月5万円稼ぐコツ</a></h3>
-                    <p>趣味のイラストを収入源に。ココナラでの効果的な出品方法と集客テクニックを紹介します。</p>
-                    <div class="article-footer">
-                        <span class="difficulty">難易度: ★★☆☆☆</span>
-                        <span class="reading-time">読了時間: 7分</span>
-                    </div>
-                </article>
+                    <a href="investment/tsumitate-nisa-guide.html" class="article-card" data-category="investment" style="text-decoration: none; color: inherit; display: block; cursor: pointer;">
+                        <div class="article-meta" style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px;">
+                            <div style="display: flex; align-items: center; gap: 12px;">
+                                <span class="category-tag">投資・資産運用</span>
+                                <time datetime="2025-07-28">2025年7月28日</time>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 16px; font-size: 0.85rem;">
+                                <span class="reading-time" style="color: #666;">8分で読める</span>
+                                <span class="difficulty" style="color: #3f3277; font-weight: 600;">難易度: ★★★☆☆</span>
+                            </div>
+                        </div>
+                        <h3>初心者でも始められる！月1万円から始める積立投資術</h3>
+                        <p>少額から始められる積立投資で副収入を得る方法を解説。新NISAを活用した税制優遇を受けながら、着実に資産を増やす投資副業の始め方を初心者向けに紹介します。</p>
+                    </a>
 
-                <article class="article-card" data-category="creative">
-                    <div class="article-meta">
-                        <span class="category-tag">クリエイティブ</span>
-                        <time datetime="2025-07-17">2025年7月17日</time>
-                    </div>
-                    <h3><a href="#">YouTube動画編集の副業で月20万円稼ぐ方法</a></h3>
-                    <p>需要が急増中の動画編集スキル。初心者から始めて高単価案件を獲得するまでのロードマップ。</p>
-                    <div class="article-footer">
-                        <span class="difficulty">難易度: ★★★☆☆</span>
-                        <span class="reading-time">読了時間: 9分</span>
-                    </div>
-                </article>
+                    <a href="skill-share/online-tutoring.html" class="article-card" data-category="skill-share" style="text-decoration: none; color: inherit; display: block; cursor: pointer;">
+                        <div class="article-meta" style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px;">
+                            <div style="display: flex; align-items: center; gap: 12px;">
+                                <span class="category-tag">スキルシェア</span>
+                                <time datetime="2025-07-28">2025年7月28日</time>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 16px; font-size: 0.85rem;">
+                                <span class="reading-time" style="color: #666;">10分で読める</span>
+                                <span class="difficulty" style="color: #3f3277; font-weight: 600;">難易度: ★★☆☆☆</span>
+                            </div>
+                        </div>
+                        <h3>オンライン家庭教師で時給3000円稼ぐ方法</h3>
+                        <p>Zoomを使った個別指導で高時給を実現。あなたの知識と経験を活かして、在宅で時給3,000円以上稼ぐ方法を詳しく解説します。</p>
+                    </a>
 
-                <article class="article-card" data-category="ecommerce">
-                    <div class="article-meta">
-                        <span class="category-tag">物販・EC</span>
-                        <time datetime="2025-07-16">2025年7月16日</time>
-                    </div>
-                    <h3><a href="#">Amazon FBAで月商100万円を達成する仕入れ戦略</a></h3>
-                    <p>初心者でも始められるAmazon FBA。利益率の高い商品の見つけ方と仕入れのコツを解説。</p>
-                    <div class="article-footer">
-                        <span class="difficulty">難易度: ★★★★☆</span>
-                        <span class="reading-time">読了時間: 12分</span>
-                    </div>
-                </article>
+                    <a href="online-work/programming-for-beginners.html" class="article-card" data-category="online-work" style="text-decoration: none; color: inherit; display: block; cursor: pointer;">
+                        <div class="article-meta" style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px;">
+                            <div style="display: flex; align-items: center; gap: 12px;">
+                                <span class="category-tag">在宅ワーク</span>
+                                <time datetime="2025-07-27">2025年7月27日</time>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 16px; font-size: 0.85rem;">
+                                <span class="reading-time" style="color: #666;">12分で読める</span>
+                                <span class="difficulty" style="color: #3f3277; font-weight: 600;">難易度: ★★★☆☆</span>
+                            </div>
+                        </div>
+                        <h3>プログラミング副業の始め方｜未経験から3ヶ月で案件獲得する方法</h3>
+                        <p>高単価で需要が高いプログラミング副業。完全未経験からでも3ヶ月で案件獲得を目指せる効率的な学習方法を徹底解説します。</p>
+                    </a>
 
-                <article class="article-card" data-category="gig-economy">
-                    <div class="article-meta">
-                        <span class="category-tag">ギグエコノミー</span>
-                        <time datetime="2025-07-15">2025年7月15日</time>
-                    </div>
-                    <h3><a href="#">Uber Eats配達で効率的に月10万円稼ぐテクニック</a></h3>
-                    <p>隙間時間を有効活用。配達効率を最大化するエリア選びと時間帯戦略を公開。</p>
-                    <div class="article-footer">
-                        <span class="difficulty">難易度: ★☆☆☆☆</span>
-                        <span class="reading-time">読了時間: 6分</span>
-                    </div>
-                </article>
+                    <a href="online-work/writing-side-job.html" class="article-card" data-category="online-work" style="text-decoration: none; color: inherit; display: block; cursor: pointer;">
+                        <div class="article-meta" style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px;">
+                            <div style="display: flex; align-items: center; gap: 12px;">
+                                <span class="category-tag">在宅ワーク</span>
+                                <time datetime="2025-07-24">2025年7月24日</time>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 16px; font-size: 0.85rem;">
+                                <span class="reading-time" style="color: #666;">10分で読める</span>
+                                <span class="difficulty" style="color: #3f3277; font-weight: 600;">難易度: ★★☆☆☆</span>
+                            </div>
+                        </div>
+                        <h3>Webライティングで月10万円稼ぐ方法｜未経験から始める副業ライター</h3>
+                        <p>文章を書くことが好きな方に最適な副業、Webライティング。未経験からでも3ヶ月で月10万円を達成できる具体的なステップを解説します。</p>
+                    </a>
+
+                    <a href="skill-share/coconala-strategy.html" class="article-card" data-category="skill-share" style="text-decoration: none; color: inherit; display: block; cursor: pointer;">
+                        <div class="article-meta" style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px;">
+                            <div style="display: flex; align-items: center; gap: 12px;">
+                                <span class="category-tag">スキルシェア</span>
+                                <time datetime="2025-07-29">2025年7月29日</time>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 16px; font-size: 0.85rem;">
+                                <span class="reading-time" style="color: #666;">12分で読める</span>
+                                <span class="difficulty" style="color: #3f3277; font-weight: 600;">難易度: ★★★☆☆</span>
+                            </div>
+                        </div>
+                        <h3>ココナラでスキル販売して月20万円稼ぐ方法｜プロが教える成功戦略</h3>
+                        <p>ココナラでスキル販売を成功させる具体的な方法を解説。プロフィール作成から高単価案件獲得まで、月20万円を目指すための実践的な戦略をご紹介します。</p>
+                    </a>
+
+                    <a href="online-work/data-entry-jobs.html" class="article-card" data-category="online-work" style="text-decoration: none; color: inherit; display: block; cursor: pointer;">
+                        <div class="article-meta" style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px;">
+                            <div style="display: flex; align-items: center; gap: 12px;">
+                                <span class="category-tag">在宅ワーク</span>
+                                <time datetime="2025-07-24">2025年7月24日</time>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 16px; font-size: 0.85rem;">
+                                <span class="reading-time" style="color: #666;">8分で読める</span>
+                                <span class="difficulty" style="color: #3f3277; font-weight: 600;">難易度: ★☆☆☆☆</span>
+                            </div>
+                        </div>
+                        <h3>データ入力の副業で月5万円稼ぐ方法｜初心者向け完全ガイド</h3>
+                        <p>パソコンとインターネット環境があれば誰でも始められるデータ入力の副業。初心者でも月5万円の副収入を目指せる具体的な方法を解説します。</p>
+                    </a>
+                </div>
+
+                <!-- 2ページ目: 記事9-16 -->
+                <div class="page-articles" data-page="2" style="display: none;">
+                    <a href="skill-share/programming-instructor.html" class="article-card" data-category="skill-share" style="text-decoration: none; color: inherit; display: block; cursor: pointer;">
+                        <div class="article-meta" style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px;">
+                            <div style="display: flex; align-items: center; gap: 12px;">
+                                <span class="category-tag">スキルシェア</span>
+                                <time datetime="2025-07-29">2025年7月29日</time>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 16px; font-size: 0.85rem;">
+                                <span class="reading-time" style="color: #666;">15分で読める</span>
+                                <span class="difficulty" style="color: #3f3277; font-weight: 600;">難易度: ★★★☆☆</span>
+                            </div>
+                        </div>
+                        <h3>プログラミング講師として月30万円稼ぐ方法｜未経験からの完全ロードマップ</h3>
+                        <p>プログラミング講師として副業で月30万円を稼ぐ方法を詳しく解説。オンライン講師の始め方、集客方法、単価アップの戦略まで実践的なノウハウをご紹介します。</p>
+                    </a>
+
+                    <a href="skill-share/business-consulting.html" class="article-card" data-category="skill-share" style="text-decoration: none; color: inherit; display: block; cursor: pointer;">
+                        <div class="article-meta" style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px;">
+                            <div style="display: flex; align-items: center; gap: 12px;">
+                                <span class="category-tag">スキルシェア</span>
+                                <time datetime="2025-07-29">2025年7月29日</time>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 16px; font-size: 0.85rem;">
+                                <span class="reading-time" style="color: #666;">18分で読める</span>
+                                <span class="difficulty" style="color: #3f3277; font-weight: 600;">難易度: ★★★★☆</span>
+                            </div>
+                        </div>
+                        <h3>ビジネスコンサルティング副業で月50万円稼ぐ方法｜実践的な始め方ガイド</h3>
+                        <p>ビジネスコンサルティング副業で月50万円を稼ぐ方法を詳しく解説。未経験からコンサルタントになるための準備、案件獲得、単価アップの実践的ノウハウをご紹介します。</p>
+                    </a>
+
+                    <a href="investment/stock-investment-basics.html" class="article-card" data-category="investment" style="text-decoration: none; color: inherit; display: block; cursor: pointer;">
+                        <div class="article-meta" style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px;">
+                            <div style="display: flex; align-items: center; gap: 12px;">
+                                <span class="category-tag">投資・資産運用</span>
+                                <time datetime="2025-07-29">2025年7月29日</time>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 16px; font-size: 0.85rem;">
+                                <span class="reading-time" style="color: #666;">16分で読める</span>
+                                <span class="difficulty" style="color: #3f3277; font-weight: 600;">難易度: ★★★☆☆</span>
+                            </div>
+                        </div>
+                        <h3>株式投資の始め方｜初心者でも月5万円の不労所得を作る方法</h3>
+                        <p>株式投資初心者向けの完全ガイド。月5万円の不労所得を目指すための具体的な投資戦略、銘柄選び、リスク管理まで実践的なノウハウを分かりやすく解説します。</p>
+                    </a>
+
+                    <a href="investment/cryptocurrency-basics.html" class="article-card" data-category="investment" style="text-decoration: none; color: inherit; display: block; cursor: pointer;">
+                        <div class="article-meta" style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px;">
+                            <div style="display: flex; align-items: center; gap: 12px;">
+                                <span class="category-tag">投資・資産運用</span>
+                                <time datetime="2025-07-29">2025年7月29日</time>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 16px; font-size: 0.85rem;">
+                                <span class="reading-time" style="color: #666;">14分で読める</span>
+                                <span class="difficulty" style="color: #3f3277; font-weight: 600;">難易度: ★★★☆☆</span>
+                            </div>
+                        </div>
+                        <h3>仮想通貨投資入門｜初心者が月3万円を目指す安全な始め方</h3>
+                        <p>仮想通貨投資初心者向けの完全ガイド。月3万円の副収入を目指すための安全な始め方、おすすめ通貨、リスク管理まで実践的なノウハウを分かりやすく解説します。</p>
+                    </a>
+
+                    <a href="investment/real-estate-crowdfunding.html" class="article-card" data-category="investment" style="text-decoration: none; color: inherit; display: block; cursor: pointer;">
+                        <div class="article-meta" style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px;">
+                            <div style="display: flex; align-items: center; gap: 12px;">
+                                <span class="category-tag">投資・資産運用</span>
+                                <time datetime="2025-07-29">2025年7月29日</time>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 16px; font-size: 0.85rem;">
+                                <span class="reading-time" style="color: #666;">12分で読める</span>
+                                <span class="difficulty" style="color: #3f3277; font-weight: 600;">難易度: ★★☆☆☆</span>
+                            </div>
+                        </div>
+                        <h3>不動産クラウドファンディング入門｜1万円から始める安定投資</h3>
+                        <p>不動産クラウドファンディングの始め方を初心者向けに解説。1万円から始められる安定投資で月1-2万円の副収入を得る方法をご紹介します。</p>
+                    </a>
+                </div>
+
+                <!-- 3ページ目: 記事17-24 -->
+                <div class="page-articles" data-page="3" style="display: none;">
+                    <a href="creative/youtube-monetization-guide.html" class="article-card" data-category="creative" style="text-decoration: none; color: inherit; display: block; cursor: pointer;">
+                        <div class="article-meta" style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px;">
+                            <div style="display: flex; align-items: center; gap: 12px;">
+                                <span class="category-tag">クリエイティブ</span>
+                                <time datetime="2025-07-29">2025年7月29日</time>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 16px; font-size: 0.85rem;">
+                                <span class="reading-time" style="color: #666;">18分で読める</span>
+                                <span class="difficulty" style="color: #3f3277; font-weight: 600;">難易度: ★★★☆☆</span>
+                            </div>
+                        </div>
+                        <h3>YouTubeチャンネル収益化ガイド｜月10万円を稼ぐ戦略と実践方法</h3>
+                        <p>YouTubeチャンネルで月10万円を目指す完全ガイド。企画、撮影、編集、収益化まで初心者でも分かる実践的な方法を詳しく解説します。</p>
+                    </a>
+
+                    <a href="creative/blog-affiliate-guide.html" class="article-card" data-category="creative" style="text-decoration: none; color: inherit; display: block; cursor: pointer;">
+                        <div class="article-meta" style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px;">
+                            <div style="display: flex; align-items: center; gap: 12px;">
+                                <span class="category-tag">クリエイティブ</span>
+                                <time datetime="2025-07-29">2025年7月29日</time>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 16px; font-size: 0.85rem;">
+                                <span class="reading-time" style="color: #666;">20分で読める</span>
+                                <span class="difficulty" style="color: #3f3277; font-weight: 600;">難易度: ★★★☆☆</span>
+                            </div>
+                        </div>
+                        <h3>ブログアフィリエイトで月20万円稼ぐ方法｜初心者向け完全ガイド</h3>
+                        <p>ブログアフィリエイトで月20万円を目指す完全ガイド。ブログ開設から記事作成、SEO対策、収益化まで初心者でも分かる実践的な方法を詳しく解説します。</p>
+                    </a>
+
+                    <a href="creative/illustration-design-income.html" class="article-card" data-category="creative" style="text-decoration: none; color: inherit; display: block; cursor: pointer;">
+                        <div class="article-meta" style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px;">
+                            <div style="display: flex; align-items: center; gap: 12px;">
+                                <span class="category-tag">クリエイティブ</span>
+                                <time datetime="2025-07-29">2025年7月29日</time>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 16px; font-size: 0.85rem;">
+                                <span class="reading-time" style="color: #666;">16分で読める</span>
+                                <span class="difficulty" style="color: #3f3277; font-weight: 600;">難易度: ★★★☆☆</span>
+                            </div>
+                        </div>
+                        <h3>イラスト・デザインで月15万円稼ぐ方法｜クリエイター向け副業ガイド</h3>
+                        <p>イラスト・デザインスキルを活かして月15万円を稼ぐ方法を徹底解説。案件獲得から単価アップまで、クリエイター向けの実践的な副業戦略をご紹介します。</p>
+                    </a>
+
+                    <a href="creative/music-production-income.html" class="article-card" data-category="creative" style="text-decoration: none; color: inherit; display: block; cursor: pointer;">
+                        <div class="article-meta" style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px;">
+                            <div style="display: flex; align-items: center; gap: 12px;">
+                                <span class="category-tag">クリエイティブ</span>
+                                <time datetime="2025-07-29">2025年7月29日</time>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 16px; font-size: 0.85rem;">
+                                <span class="reading-time" style="color: #666;">17分で読める</span>
+                                <span class="difficulty" style="color: #3f3277; font-weight: 600;">難易度: ★★★☆☆</span>
+                            </div>
+                        </div>
+                        <h3>音楽制作・配信で月12万円稼ぐ方法｜ミュージシャン向け副業ガイド</h3>
+                        <p>音楽制作・配信スキルを活かして月12万円を稼ぐ方法を徹底解説。楽曲制作から配信収益、ライセンス販売まで、音楽家向けの実践的な収益化戦略をご紹介します。</p>
+                    </a>
+
+                    <a href="creative/stock-photo-sales.html" class="article-card" data-category="creative" style="text-decoration: none; color: inherit; display: block; cursor: pointer;">
+                        <div class="article-meta" style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px;">
+                            <div style="display: flex; align-items: center; gap: 12px;">
+                                <span class="category-tag">クリエイティブ</span>
+                                <time datetime="2025-07-29">2025年7月29日</time>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 16px; font-size: 0.85rem;">
+                                <span class="reading-time" style="color: #666;">15分で読める</span>
+                                <span class="difficulty" style="color: #3f3277; font-weight: 600;">難易度: ★★☆☆☆</span>
+                            </div>
+                        </div>
+                        <h3>写真販売副業で月8万円稼ぐ方法｜ストックフォト完全ガイド</h3>
+                        <p>写真販売で月8万円を稼ぐ方法を徹底解説。ストックフォトサイトの活用から売れる写真の撮り方まで、フォトグラファー向けの実践的な副業戦略をご紹介します。</p>
+                    </a>
+                </div>
+
+                <!-- 4ページ目: 記事25-29 - 物販・EC -->
+                <div class="page-articles" data-page="4" style="display: none;">
+                    <a href="ecommerce/sedori-guide.html" class="article-card" data-category="ecommerce" style="text-decoration: none; color: inherit; display: block; cursor: pointer;">
+                        <div class="article-meta" style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px;">
+                            <div style="display: flex; align-items: center; gap: 12px;">
+                                <span class="category-tag">物販・EC</span>
+                                <time datetime="2025-07-29">2025年7月29日</time>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 16px; font-size: 0.85rem;">
+                                <span class="reading-time" style="color: #666;">18分で読める</span>
+                                <span class="difficulty" style="color: #3f3277; font-weight: 600;">難易度: ★★★☆☆</span>
+                            </div>
+                        </div>
+                        <h3>せどり・転売で月15万円稼ぐ方法｜初心者向け完全ガイド</h3>
+                        <p>せどり・転売で月15万円を稼ぐ方法を徹底解説。商品リサーチから仕入れ、販売まで初心者でも分かる実践的なノウハウをご紹介します。</p>
+                    </a>
+
+                    <a href="ecommerce/amazon-fba-guide.html" class="article-card" data-category="ecommerce" style="text-decoration: none; color: inherit; display: block; cursor: pointer;">
+                        <div class="article-meta" style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px;">
+                            <div style="display: flex; align-items: center; gap: 12px;">
+                                <span class="category-tag">物販・EC</span>
+                                <time datetime="2025-07-29">2025年7月29日</time>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 16px; font-size: 0.85rem;">
+                                <span class="reading-time" style="color: #666;">22分で読める</span>
+                                <span class="difficulty" style="color: #3f3277; font-weight: 600;">難易度: ★★★★☆</span>
+                            </div>
+                        </div>
+                        <h3>Amazon FBA販売で月25万円稼ぐ方法｜完全攻略ガイド</h3>
+                        <p>Amazon FBA販売で月25万円を稼ぐ方法を徹底解説。商品選定から出品、在庫管理まで初心者でも分かる実践的なノウハウをご紹介します。</p>
+                    </a>
+
+                    <a href="ecommerce/online-shop-guide.html" class="article-card" data-category="ecommerce" style="text-decoration: none; color: inherit; display: block; cursor: pointer;">
+                        <div class="article-meta" style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px;">
+                            <div style="display: flex; align-items: center; gap: 12px;">
+                                <span class="category-tag">物販・EC</span>
+                                <time datetime="2025-07-29">2025年7月29日</time>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 16px; font-size: 0.85rem;">
+                                <span class="reading-time" style="color: #666;">24分で読める</span>
+                                <span class="difficulty" style="color: #3f3277; font-weight: 600;">難易度: ★★★★☆</span>
+                            </div>
+                        </div>
+                        <h3>ネットショップ開業で月30万円稼ぐ方法｜初心者向け完全ガイド</h3>
+                        <p>ネットショップ開業で月30万円を稼ぐ方法を徹底解説。商品選定からサイト構築、集客、運営まで初心者でも分かる実践的なノウハウをご紹介します。</p>
+                    </a>
+
+                    <a href="ecommerce/dropshipping-guide.html" class="article-card" data-category="ecommerce" style="text-decoration: none; color: inherit; display: block; cursor: pointer;">
+                        <div class="article-meta" style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px;">
+                            <div style="display: flex; align-items: center; gap: 12px;">
+                                <span class="category-tag">物販・EC</span>
+                                <time datetime="2025-07-29">2025年7月29日</time>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 16px; font-size: 0.85rem;">
+                                <span class="reading-time" style="color: #666;">21分で読める</span>
+                                <span class="difficulty" style="color: #3f3277; font-weight: 600;">難易度: ★★★☆☆</span>
+                            </div>
+                        </div>
+                        <h3>ドロップシッピングで月20万円稼ぐ方法｜在庫ゼロ副業完全ガイド</h3>
+                        <p>ドロップシッピングで月20万円を稼ぐ方法を徹底解説。在庫を持たずに始められる副業の仕組みから集客、運営まで初心者向けの実践的ノウハウをご紹介します。</p>
+                    </a>
+
+                    <a href="ecommerce/mercari-resale.html" class="article-card" data-category="ecommerce" style="text-decoration: none; color: inherit; display: block; cursor: pointer;">
+                        <div class="article-meta" style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px;">
+                            <div style="display: flex; align-items: center; gap: 12px;">
+                                <span class="category-tag">物販・EC</span>
+                                <time datetime="2025-07-29">2025年7月29日</time>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 16px; font-size: 0.85rem;">
+                                <span class="reading-time" style="color: #666;">19分で読める</span>
+                                <span class="difficulty" style="color: #3f3277; font-weight: 600;">難易度: ★★☆☆☆</span>
+                            </div>
+                        </div>
+                        <h3>メルカリ転売で月10万円稼ぐ方法｜初心者向け完全攻略ガイド</h3>
+                        <p>メルカリ転売で月10万円を稼ぐ方法を徹底解説。仕入れから出品、売れるコツまで初心者でも分かる実践的なノウハウをご紹介します。</p>
+                    </a>
+                </div>
+
+                <!-- 5ページ目: 記事33-37 ギグエコノミー -->
+                <div class="page-articles" data-page="5" style="display: none;">
+                    <a href="gig-economy/uber-eats-tips.html" class="article-card" data-category="gig-economy" style="text-decoration: none; color: inherit; display: block; cursor: pointer;">
+                        <div class="article-meta" style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px;">
+                            <div style="display: flex; align-items: center; gap: 12px;">
+                                <span class="category-tag">ギグエコノミー</span>
+                                <time datetime="2025-07-29">2025年7月29日</time>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 16px; font-size: 0.85rem;">
+                                <span class="reading-time" style="color: #666;">16分で読める</span>
+                                <span class="difficulty" style="color: #3f3277; font-weight: 600;">難易度: ★★☆☆☆</span>
+                            </div>
+                        </div>
+                        <h3>Uber Eats配達パートナーで月12万円稼ぐ方法｜効率的な配達攻略ガイド</h3>
+                        <p>Uber Eats配達パートナーで月12万円を稼ぐ方法を徹底解説。効率的な配達ルート、稼げる時間帯、収入アップのコツまで実践的なノウハウをご紹介します。</p>
+                    </a>
+
+                    <a href="gig-economy/housekeeping-service.html" class="article-card" data-category="gig-economy" style="text-decoration: none; color: inherit; display: block; cursor: pointer;">
+                        <div class="article-meta" style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px;">
+                            <div style="display: flex; align-items: center; gap: 12px;">
+                                <span class="category-tag">ギグエコノミー</span>
+                                <time datetime="2025-07-29">2025年7月29日</time>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 16px; font-size: 0.85rem;">
+                                <span class="reading-time" style="color: #666;">17分で読める</span>
+                                <span class="difficulty" style="color: #3f3277; font-weight: 600;">難易度: ★★☆☆☆</span>
+                            </div>
+                        </div>
+                        <h3>家事代行サービス副業で月15万円稼ぐ方法｜未経験から始める完全ガイド</h3>
+                        <p>家事代行サービス副業で月15万円を稼ぐ方法を徹底解説。未経験からの始め方、案件獲得、単価アップまで実践的なノウハウをご紹介します。</p>
+                    </a>
+
+                    <a href="gig-economy/pet-sitting.html" class="article-card" data-category="gig-economy" style="text-decoration: none; color: inherit; display: block; cursor: pointer;">
+                        <div class="article-meta" style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px;">
+                            <div style="display: flex; align-items: center; gap: 12px;">
+                                <span class="category-tag">ギグエコノミー</span>
+                                <time datetime="2025-07-29">2025年7月29日</time>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 16px; font-size: 0.85rem;">
+                                <span class="reading-time" style="color: #666;">15分で読める</span>
+                                <span class="difficulty" style="color: #3f3277; font-weight: 600;">難易度: ★★☆☆☆</span>
+                            </div>
+                        </div>
+                        <h3>ペットシッター副業で月10万円稼ぐ方法｜愛犬家におすすめの在宅ビジネス</h3>
+                        <p>ペットシッター副業で月10万円を稼ぐ方法を徹底解説。動物好きを活かした在宅ビジネスの始め方から収入アップのコツまでご紹介します。</p>
+                    </a>
+
+                    <a href="gig-economy/spot-work-apps.html" class="article-card" data-category="gig-economy" style="text-decoration: none; color: inherit; display: block; cursor: pointer;">
+                        <div class="article-meta" style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px;">
+                            <div style="display: flex; align-items: center; gap: 12px;">
+                                <span class="category-tag">ギグエコノミー</span>
+                                <time datetime="2025-07-29">2025年7月29日</time>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 16px; font-size: 0.85rem;">
+                                <span class="reading-time" style="color: #666;">14分で読める</span>
+                                <span class="difficulty" style="color: #3f3277; font-weight: 600;">難易度: ★★☆☆☆</span>
+                            </div>
+                        </div>
+                        <h3>スポット労働アプリ活用ガイド｜タイミー・シェアフルで効率的に稼ぐ方法</h3>
+                        <p>スポット労働アプリで効率的に稼ぐ方法を徹底解説。タイミー、シェアフル、プチジョブの特徴比較から収入最大化のコツまでご紹介します。</p>
+                    </a>
+
+                    <a href="gig-economy/food-delivery-comparison.html" class="article-card" data-category="gig-economy" style="text-decoration: none; color: inherit; display: block; cursor: pointer;">
+                        <div class="article-meta" style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px;">
+                            <div style="display: flex; align-items: center; gap: 12px;">
+                                <span class="category-tag">ギグエコノミー</span>
+                                <time datetime="2025-07-29">2025年7月29日</time>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 16px; font-size: 0.85rem;">
+                                <span class="reading-time" style="color: #666;">18分で読める</span>
+                                <span class="difficulty" style="color: #3f3277; font-weight: 600;">難易度: ★★☆☆☆</span>
+                            </div>
+                        </div>
+                        <h3>フードデリバリー比較で最適な配達を選ぶ方法｜効率性と収益性の徹底比較</h3>
+                        <p>Uber Eats、出前館、menu、Woltなど主要フードデリバリーサービスを徹底比較。配達パートナーとして最も稼げるサービスの選び方をご紹介します。</p>
+                    </a>
+                </div>
             </div>
 
             <!-- ページネーション -->
-            <div class="pagination">
-                <a href="#" class="page-link active">1</a>
-                <a href="#" class="page-link">2</a>
-                <a href="#" class="page-link">3</a>
-                <span class="page-dots">...</span>
-                <a href="#" class="page-link">10</a>
-                <a href="#" class="page-link next">次へ →</a>
+            <div class="pagination" style="margin-top: 60px; text-align: center;">
+                <button class="prev-page-btn" style="background: #f8f9fa; border: 1px solid #e2e8f0; padding: 12px 20px; border-radius: 6px; margin-right: 10px; cursor: pointer; color: #666; font-size: 0.9rem; transition: all 0.2s ease;" disabled>
+                    ← 前のページ
+                </button>
+                
+                <div style="display: inline-block; margin: 0 20px;">
+                    <span class="page-btn active" data-page="1" style="background: #3f3277; color: white; border: 1px solid #3f3277; padding: 10px 16px; border-radius: 6px; margin: 0 4px; cursor: pointer; font-size: 0.9rem; transition: all 0.2s ease;">1</span>
+                    <span class="page-btn" data-page="2" style="background: white; color: #3f3277; border: 1px solid #e2e8f0; padding: 10px 16px; border-radius: 6px; margin: 0 4px; cursor: pointer; font-size: 0.9rem; transition: all 0.2s ease;">2</span>
+                    <span class="page-btn" data-page="3" style="background: white; color: #3f3277; border: 1px solid #e2e8f0; padding: 10px 16px; border-radius: 6px; margin: 0 4px; cursor: pointer; font-size: 0.9rem; transition: all 0.2s ease;">3</span>
+                    <span class="page-btn" data-page="4" style="background: white; color: #3f3277; border: 1px solid #e2e8f0; padding: 10px 16px; border-radius: 6px; margin: 0 4px; cursor: pointer; font-size: 0.9rem; transition: all 0.2s ease;">4</span>
+                    <span class="page-btn" data-page="5" style="background: white; color: #3f3277; border: 1px solid #e2e8f0; padding: 10px 16px; border-radius: 6px; margin: 0 4px; cursor: pointer; font-size: 0.9rem; transition: all 0.2s ease;">5</span>
+                </div>
+                
+                <button class="next-page-btn" style="background: #3f3277; color: white; border: 1px solid #3f3277; padding: 12px 20px; border-radius: 6px; margin-left: 10px; cursor: pointer; font-size: 0.9rem; transition: all 0.2s ease;">
+                    次のページ →
+                </button>
             </div>
         </div>
     </section>
 
-    <!-- フッター -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>副業ラボ</h3>
-                    <p>AIが提案する最新副業情報サイト</p>
-                </div>
-                <div class="footer-section">
-                    <h4>カテゴリー</h4>
-                    <ul>
-                        <li><a href="/fukugyo-lab/categories/online-work.html">在宅ワーク</a></li>
-                        <li><a href="/fukugyo-lab/categories/investment.html">投資・資産運用</a></li>
-                        <li><a href="/fukugyo-lab/categories/skill-share.html">スキルシェア</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>サイト情報</h4>
-                    <ul>
-                        <li><a href="#">利用規約</a></li>
-                        <li><a href="#">プライバシーポリシー</a></li>
-                        <li><a href="#">お問い合わせ</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 副業ラボ. All rights reserved. | <a href="#">運営者情報</a></p>
-                <p style="font-size: 0.75rem; color: #999; margin-top: 0.5rem;">※ このサイトは生成AIを用いて作成しています。</p>
-            </div>
-        </div>
-    </footer>
+    <!-- フッター（共通コンポーネント） -->
+    <div id="common-footer"></div>
 
+    <script src="../components/common-components.js"></script>
     <script src="../script.js"></script>
     <script>
-        // カテゴリーフィルター機能
+        // カテゴリーフィルター機能とページネーション
         document.addEventListener('DOMContentLoaded', function() {
             const filterButtons = document.querySelectorAll('.filter-btn');
             const articleCards = document.querySelectorAll('.article-card');
+            const pageArticles = document.querySelectorAll('.page-articles');
+            const pageButtons = document.querySelectorAll('.page-btn');
+            const prevPageBtn = document.querySelector('.prev-page-btn');
+            const nextPageBtn = document.querySelector('.next-page-btn');
+            
+            let currentPage = 1;
+            let currentCategory = 'all';
+            const totalPages = pageArticles.length;
 
+            // カテゴリーフィルター機能
             filterButtons.forEach(button => {
                 button.addEventListener('click', function() {
                     // アクティブクラスの切り替え
@@ -208,16 +534,104 @@
                     this.classList.add('active');
 
                     // フィルタリング
-                    const category = this.getAttribute('data-category');
+                    currentCategory = this.getAttribute('data-category');
                     articleCards.forEach(card => {
-                        if (category === 'all' || card.getAttribute('data-category') === category) {
+                        if (currentCategory === 'all' || card.getAttribute('data-category') === currentCategory) {
                             card.style.display = 'block';
                         } else {
                             card.style.display = 'none';
                         }
                     });
+                    
+                    // フィルター後は1ページ目に戻る
+                    currentPage = 1;
+                    updatePagination();
                 });
             });
+
+            // ページネーション機能
+            function updatePagination() {
+                // ページコンテンツの表示切り替え
+                pageArticles.forEach((page, index) => {
+                    if (index + 1 === currentPage) {
+                        page.style.display = 'block';
+                    } else {
+                        page.style.display = 'none';
+                    }
+                });
+                
+                // ページ番号ボタンのアクティブ状態更新
+                pageButtons.forEach((btn) => {
+                    const pageNumber = parseInt(btn.getAttribute('data-page'));
+                    if (pageNumber === currentPage) {
+                        btn.classList.add('active');
+                        btn.style.background = '#3f3277';
+                        btn.style.color = 'white';
+                        btn.style.border = '1px solid #3f3277';
+                    } else {
+                        btn.classList.remove('active');
+                        btn.style.background = 'white';
+                        btn.style.color = '#3f3277';
+                        btn.style.border = '1px solid #e2e8f0';
+                    }
+                });
+
+                // 前ページボタンの状態更新
+                if (currentPage === 1) {
+                    prevPageBtn.disabled = true;
+                    prevPageBtn.style.background = '#f8f9fa';
+                    prevPageBtn.style.color = '#666';
+                    prevPageBtn.style.cursor = 'not-allowed';
+                } else {
+                    prevPageBtn.disabled = false;
+                    prevPageBtn.style.background = 'white';
+                    prevPageBtn.style.color = '#3f3277';
+                    prevPageBtn.style.cursor = 'pointer';
+                }
+
+                // 次ページボタンの状態更新
+                if (currentPage === totalPages) {
+                    nextPageBtn.disabled = true;
+                    nextPageBtn.style.background = '#f8f9fa';
+                    nextPageBtn.style.color = '#666';
+                    nextPageBtn.style.cursor = 'not-allowed';
+                } else {
+                    nextPageBtn.disabled = false;
+                    nextPageBtn.style.background = '#3f3277';
+                    nextPageBtn.style.color = 'white';
+                    nextPageBtn.style.cursor = 'pointer';
+                }
+            }
+
+            // ページ番号ボタンのクリックイベント
+            pageButtons.forEach((btn) => {
+                btn.addEventListener('click', function() {
+                    const pageNumber = parseInt(this.getAttribute('data-page'));
+                    if (pageNumber !== currentPage) {
+                        currentPage = pageNumber;
+                        updatePagination();
+                    }
+                });
+            });
+
+            // 前ページボタンのクリックイベント
+            prevPageBtn.addEventListener('click', function() {
+                if (currentPage > 1) {
+                    currentPage--;
+                    updatePagination();
+                }
+            });
+
+            // 次ページボタンのクリックイベント
+            nextPageBtn.addEventListener('click', function() {
+                if (currentPage < totalPages) {
+                    currentPage++;
+                    updatePagination();
+                }
+            });
+            
+            // 初期表示
+            updatePagination();
         });
     </script>
 </body>
