@@ -209,24 +209,43 @@
 .table-wrapper {
     overflow-x: auto;
     margin: 2rem 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+/* スクロールヒント */
+.table-wrapper::after {
+    content: "← 横にスクロールできます →";
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.8rem;
+    color: var(--text-light);
+    display: none;
 }
 
 .data-table {
     width: 100%;
     border-collapse: collapse;
+    min-width: 600px; /* テーブル最小幅を設定 */
 }
 
 .data-table th,
 .data-table td {
-    padding: 1rem;
+    padding: 0.75rem;
     text-align: left;
     border-bottom: 1px solid var(--bg-gray);
+    font-size: 0.9rem;
+    white-space: nowrap;
 }
 
 .data-table th {
     background: var(--bg-light);
     font-weight: 600;
     color: var(--text-color);
+    font-size: 0.85rem;
 }
 
 .data-table tr:hover {
@@ -452,31 +471,134 @@
 }
 
 @media (max-width: 768px) {
+    /* 記事タイトル */
     .article-title {
-        font-size: 2rem;
+        font-size: 1.8rem;
+        line-height: 1.3;
     }
     
+    /* 記事本文 */
+    .article-body {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+    
+    .article-body h2 {
+        font-size: 1.4rem;
+        margin: 2rem 0 1rem;
+    }
+    
+    .article-body h3 {
+        font-size: 1.2rem;
+        margin: 1.5rem 0 0.8rem;
+    }
+    
+    .article-body p {
+        margin-bottom: 1.2rem;
+    }
+    
+    /* テーブル改善 */
+    .table-wrapper::after {
+        display: block; /* スクロールヒントを表示 */
+    }
+    
+    .data-table th,
+    .data-table td {
+        padding: 0.6rem 0.5rem;
+        font-size: 0.8rem;
+    }
+    
+    .data-table th {
+        font-size: 0.75rem;
+    }
+    
+    /* その他要素 */
     .related-grid {
         grid-template-columns: 1fr;
+        gap: 1rem;
     }
     
     .sidebar-widget {
         display: block;
         width: 100%;
         margin-right: 0;
+        margin-bottom: 1.5rem;
+    }
+    
+    .article-cta {
+        padding: 2rem 1.5rem;
+    }
+    
+    .summary-box {
+        padding: 1.5rem;
+        margin: 1.5rem 0;
     }
 }
 
 @media (max-width: 480px) {
+    /* 小画面記事調整 */
     .article-title {
-        font-size: 1.75rem;
+        font-size: 1.5rem;
+        line-height: 1.3;
     }
     
+    .article-body {
+        font-size: 13px;
+        line-height: 1.6;
+    }
+    
+    .article-body h2 {
+        font-size: 1.3rem;
+        margin: 1.5rem 0 0.8rem;
+    }
+    
+    .article-body h3 {
+        font-size: 1.1rem;
+        margin: 1.2rem 0 0.6rem;
+    }
+    
+    /* テーブル最適化 */
+    .data-table th,
+    .data-table td {
+        padding: 0.5rem 0.4rem;
+        font-size: 0.75rem;
+        line-height: 1.3;
+    }
+    
+    .data-table th {
+        font-size: 0.7rem;
+    }
+    
+    .data-table {
+        min-width: 400px; /* 小画面用最小幅 */
+    }
+    
+    /* メタ情報 */
     .article-meta-top {
         flex-wrap: wrap;
+        gap: 0.5rem;
     }
     
     .article-info {
-        gap: 1rem;
+        gap: 0.8rem;
+        font-size: 0.8rem;
+    }
+    
+    /* その他 */
+    .article-cta {
+        padding: 1.5rem 1rem;
+    }
+    
+    .summary-box {
+        padding: 1.2rem;
+        margin: 1.2rem 0;
+    }
+    
+    .breadcrumb {
+        padding: 0.8rem 0;
+    }
+    
+    .breadcrumb ul {
+        font-size: 0.75rem;
     }
 }
