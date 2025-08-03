@@ -13,6 +13,7 @@ const CommonComponents = {
                         <li><a href="index.html#categories">カテゴリー</a></li>
                         <li><a href="index.html#ranking">人気記事</a></li>
                         <li><a href="about.html">初めての方へ</a></li>
+                        <li><a href="about-us.html">About Us</a></li>
                         <li><a href="consultation.html" class="cta-button">無料相談</a></li>
                     </ul>
                     <div class="hamburger">
