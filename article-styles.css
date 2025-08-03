@@ -336,6 +336,7 @@
 /* 関連記事 */
 .related-articles {
     margin-top: 4rem;
+    margin-bottom: 4rem;
     padding-top: 3rem;
     border-top: 1px solid var(--bg-gray);
 }
@@ -347,14 +348,23 @@
     margin-top: 1.5rem;
 }
 
+.related-card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    transition: var(--transition);
+}
+
 .related-card {
     background: var(--bg-light);
     padding: 1.5rem;
     border-radius: 10px;
     transition: var(--transition);
+    height: 100%;
+    cursor: pointer;
 }
 
-.related-card:hover {
+.related-card-link:hover .related-card {
     transform: translateY(-5px);
     box-shadow: var(--shadow);
 }
@@ -362,15 +372,16 @@
 .related-card h3 {
     font-size: 1.125rem;
     margin-bottom: 0.5rem;
-}
-
-.related-card a {
     color: var(--text-color);
-    text-decoration: none;
     transition: var(--transition);
 }
 
-.related-card a:hover {
+.related-card p {
+    color: var(--text-light);
+    transition: var(--transition);
+}
+
+.related-card-link:hover .related-card h3 {
     color: var(--primary-color);
 }
 
