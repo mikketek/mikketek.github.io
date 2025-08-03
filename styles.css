@@ -583,6 +583,16 @@ body {
     color: var(--secondary-color);
 }
 
+.footer-links-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem 1rem;
+}
+
+.footer-links-grid li {
+    margin-bottom: 0.3rem;
+}
+
 .footer-bottom {
     text-align: center;
     padding-top: 2rem;
@@ -630,6 +640,11 @@ body {
     .footer-section p {
         font-size: 0.9rem;
         line-height: 1.6;
+    }
+    
+    .footer-links-grid {
+        grid-template-columns: 1fr;
+        gap: 0.3rem;
     }
     
     /* レイアウト調整 */
