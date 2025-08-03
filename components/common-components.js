@@ -36,15 +36,6 @@ const CommonComponents = {
                     <p>AIが提案する最新副業情報サイト。あなたに合った副業を見つけて、理想の収入アップを実現しましょう。</p>
                 </div>
                 <div class="footer-section">
-                    <h4>人気カテゴリー</h4>
-                    <ul>
-                        <li><a href="categories/online-work.html">在宅ワーク</a></li>
-                        <li><a href="categories/investment.html">投資・資産運用</a></li>
-                        <li><a href="categories/skill-share.html">スキルシェア</a></li>
-                        <li><a href="categories/creative.html">クリエイティブ</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
                     <h4>サイト情報</h4>
                     <ul>
                         <li><a href="footer/terms.html">利用規約</a></li>
