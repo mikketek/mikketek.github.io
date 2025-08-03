@@ -230,15 +230,22 @@
     width: 100%;
     border-collapse: collapse;
     min-width: 600px; /* テーブル最小幅を設定 */
+    border: 1px solid var(--bg-gray);
 }
 
 .data-table th,
 .data-table td {
-    padding: 0.75rem;
+    padding: 1rem;
     text-align: left;
+    border-right: 1px solid var(--bg-gray);
     border-bottom: 1px solid var(--bg-gray);
     font-size: 0.9rem;
     white-space: nowrap;
+}
+
+.data-table th:last-child,
+.data-table td:last-child {
+    border-right: none;
 }
 
 .data-table th {
@@ -246,10 +253,50 @@
     font-weight: 600;
     color: var(--text-color);
     font-size: 0.85rem;
+    border-top: none;
 }
 
 .data-table tr:hover {
     background: var(--bg-light);
+}
+
+/* 全テーブル共通の改善されたスタイル */
+.article-body table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.article-body table th,
+.article-body table td {
+    padding: 0.75rem;
+    text-align: left;
+    border-right: 1px solid #e2e8f0;
+    border-bottom: 1px solid #e2e8f0;
+    font-size: 0.9rem;
+}
+
+.article-body table th:last-child,
+.article-body table td:last-child {
+    border-right: none;
+}
+
+.article-body table th {
+    background: #e2e8f0;
+    font-weight: 600;
+    color: var(--text-color);
+    border-top: none;
+}
+
+.article-body table tbody tr:nth-child(even) {
+    background: #fafbfc;
+}
+
+.article-body table tbody tr:hover {
+    background: #f1f5f9;
 }
 
 /* サマリーボックス */
