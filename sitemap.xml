@@ -16,6 +16,12 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://mikketek.github.io/fukugyo-lab/about-us.html</loc>
+    <lastmod>2025-08-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikketek.github.io/fukugyo-lab/consultation.html</loc>
     <lastmod>2025-01-30</lastmod>
     <changefreq>monthly</changefreq>
