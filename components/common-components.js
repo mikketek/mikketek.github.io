@@ -37,11 +37,10 @@ const CommonComponents = {
                 </div>
                 <div class="footer-section">
                     <h4>サイト情報</h4>
-                    <ul class="footer-links-grid">
+                    <ul>
                         <li><a href="footer/terms.html">利用規約</a></li>
                         <li><a href="footer/privacy.html">プライバシーポリシー</a></li>
                         <li><a href="footer/contact.html">お問い合わせ</a></li>
-                        <li><a href="about.html">初めての方へ</a></li>
                         <li><a href="about-us.html">About Us</a></li>
                     </ul>
                 </div>
